@@ -20,8 +20,8 @@ class YumlCmd
       o.on('-t', '--type EXTENSION', 'Output format: png (default), jpg') do |extension|
         ext = extension if extension
       end
-      o.on('-o', '--orderly', 'Generate orderly') do |type|
-        type = "" if type
+      o.on('-o', '--orderly', 'Generate orderly') do |t|
+        type = "/orderly" if t
       end      
       o.on('-n', '--name OUTPUT', 'Output filename') do |name|
         output = name
